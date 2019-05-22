@@ -13,9 +13,23 @@
 
 <nav id="navbar-site" class="navbar navbar-dark bg-dark navbar-expand-sm">
   <div class="container">
-    <div class="navbar-nav">
+    <div class="navbar-nav ml-s-auto">
       <a class="nav-item nav-link" href="#mission">Mission</a>
-      <a class="nav-item nav-link" href="#services">Services</a>
+
+      <div class="dropdown">
+        <a  data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false"
+            id="servicesDropdown"
+            class="nav-item nav-link dropdown-toggle"
+            href="#">Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+          <a class="dropdown-item" href="#">Grooming</a>
+          <a class="dropdown-item" href="#">Service 2</a>
+          <a class="dropdown-item" href="#">Service 3</a>
+        </div>
+      </div>
+
       <a class="nav-item nav-link" href="#staff">Staff</a>
       <a class="nav-item nav-link" href="#testimonials">Testimonials</a>
     </div><!-- navbar-nav -->
